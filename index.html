@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pearls Moons Academy</title>
+    <link rel="shortcut icon" href="assets/images/pearls-icon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/flot-btn.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- below link for floting button -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- link end -->
+</head>
+
+<body>
+    <!-- nav section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid">
+            <img src="assets/images/pearls-academy-logo.png" alt="Pearls Moon Academy Logo" class="img-fluid" width="300">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <button class="btn btn-primary enroll-btn">Enroll Now</button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+    <!-- slider section -->
+    <section class="imageSlider">
+        <div id="carouselExampleIndicators" class="carousel slide custom-carousel" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/images/6195519.jpg" class="d-block w-100 img-fluid" alt="Banner1">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/9224852.jpg" class="d-block w-100 img-fluid" alt="Banner2">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/6195519.jpg" class="d-block w-100 img-fluid" alt="Banner3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses my-5">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h3 style="font-weight: 600;">Our Featured Courses</h3>
+            </div>
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="card shadow h-100" id="courseCard">
+                        <img src="https://johnthecomputerman.co.uk/storage/2021/05/introtoprogramming-190909184629-thumbnail-4.jpg" class="card-img-top" alt="Web Development">
+                        <div class="card-body">
+                            <h5 class="card-title">Web Development</h5>
+                            <p class="card-text">Learn the basics of web development and build stunning websites.</p>
+                            <a href="#" class="btn btn-primary">Enroll</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 2 -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="card shadow h-100" id="courseCard">
+                        <img src="https://cdn.prod.website-files.com/63ccf2f0ea97be12ead278ed/644a18b637053fa3709c5ba2_what-is-data-science.jpg"
+                            class="card-img-top" alt="Data Science">
+                        <div class="card-body">
+                            <h5 class="card-title">Data Science</h5>
+                            <p class="card-text">Dive into the world of data and unlock insights.</p>
+                            <a href="#" class="btn btn-primary">Enroll</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 3 -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="card shadow h-100" id="courseCard">
+                        <img src="https://www.naukri.com/campus/career-guidance/wp-content/uploads/2024/04/machine-learning.jpg"
+                            class="card-img-top" alt="AI">
+                        <div class="card-body">
+                            <h5 class="card-title">Artificial Intelligence</h5>
+                            <p class="card-text">Learn how machines can think and perform tasks like humans.</p>
+                            <a href="#" class="btn btn-primary">Enroll</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 4 -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="card shadow h-100" id="courseCard">
+                        <img src="https://www.naukri.com/campus/career-guidance/wp-content/uploads/2024/04/machine-learning.jpg"
+                            class="card-img-top" alt="Machine Learning">
+                        <div class="card-body">
+                            <h5 class="card-title">Machine Learning</h5>
+                            <p class="card-text">Understand the algorithms that power today's smart systems.</p>
+                            <a href="#" class="btn btn-primary">Enroll</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 5 -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="card shadow h-100" id="courseCard">
+                        <img src="https://www.neit.edu/wp-content/uploads/2022/10/Cyber-Security-Icon-Concept-2-1-1024x632.jpeg" class="card-img-top" alt="Web Development">
+                        <div class="card-body">
+                            <h5 class="card-title">Introduction to Programming</h5>
+                            <p class="card-text">Learn the fundamentals of programming with hands-on projects.</p>
+                            <a href="#" class="btn btn-primary">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 6 -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="card shadow h-100" id="courseCard">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYTz5b0VHp3jCQ0jUAPQSIur3ZSOZ8UTcUrg&s"
+                            class="card-img-top" alt="Data Science">
+                        <div class="card-body">
+                            <h5 class="card-title">Data Science</h5>
+                            <p class="card-text">Dive into the world of data and unlock insights.</p>
+                            <a href="#" class="btn btn-primary">Enroll</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 7 -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="card shadow h-100" id="courseCard">
+                        <img src="https://logopond.com/logos/90bf74ac7dda92f25bcde415a0fd07ed.png"
+                            class="card-img-top" alt="AI">
+                        <div class="card-body">
+                            <h5 class="card-title">Artificial Intelligence</h5>
+                            <p class="card-text">Learn how machines can think and perform tasks like humans.</p>
+                            <a href="#" class="btn btn-primary">Enroll</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 8 -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="card shadow h-100" id="courseCard">
+                        <img src="https://www.fxifcm.asia/uploads/image/what-is-forex.jpg"
+                            class="card-img-top" alt="Machine Learning">
+                        <div class="card-body">
+                            <h5 class="card-title">Machine Learning</h5>
+                            <p class="card-text">Understand the algorithms that power today's smart systems.</p>
+                            <a href="#" class="btn btn-primary">Enroll</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 9 -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="card shadow h-100" id="courseCard">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe9jCsoPTZcUDA726kAkoQP9zSr8b1sA9vcQ&s"
+                            class="card-img-top" alt="Machine Learning">
+                        <div class="card-body">
+                            <h5 class="card-title">Machine Learning</h5>
+                            <p class="card-text">Understand the algorithms that power today's smart systems.</p>
+                            <a href="#" class="btn btn-primary">Enroll</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Testimonials Section -->
+    <section class="testimonials my-5">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h3 style="font-weight: 600;">What Our Students Say</h3>
+            </div>
+            <div class="row justify-content-center g-3">
+                <div class="col-sm-8 col-md-6">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <p>"Pearls Moons Academy's programming course changed my career. The instructors are amazing and supportive!"</p>
+                            <p>- <i>John Doe</i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-8 col-md-6">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <p>"This academy gave me the confidence to start my own projects. Highly recommended!"</p>
+                            <p>- <i>Jane Doe</i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-light py-5">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h3 style="font-weight: 600;">Contact Us</h3>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <!--embeded maps.com-->
+                    <iframe width="100%" height="300" src="https://www.google.com/maps/embed/v1/place?q=Chennai&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                        frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="3"
+                                placeholder="Write your message here"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Footer Section-->
+    <section>
+        <div class="footer">
+            <p class="text-center mt-2">&copy;2024 Pearls Moons Academy - Powerd By <a href="">Satya</a></p>
+        </div>
+    </section>
+    <!--Flotting button Code-->
+    <div class="floating-container">
+        <div class="floating-button">+</div>
+        <div class="element-container">
+            <a href="https://www.linkedin.com" target="_blank">
+                <span class="float-element"><i class="fa-brands fa-linkedin"></i></span>
+            </a>
+            <span class="float-element">
+                <i class="fa-brands fa-instagram"></i>
+            </span>
+            <span class="float-element">
+                <i class="fa-brands fa-whatsapp"></i>
+            </span>
+        </div>
+    </div>
+<script src="scripts/right-btn.js"></script> 
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>
